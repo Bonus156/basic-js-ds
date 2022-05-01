@@ -19,16 +19,16 @@ class Node {
 class BinarySearchTree {
 
   constructor() {
-    this.root = null;
+    this.basis = null;
     
   }
   root() {
     
-    return this.root;
+    return this.basis;
   }
 
   add(data) {
-    this.root = addWithin(this.root, data);
+    this.basis = addWithin(this.basis, data);
 
     function addWithin(node, data) {
       if (!node) {
@@ -50,7 +50,7 @@ class BinarySearchTree {
   }
 
   has(data) {
-    return searchWithin(this.root, data);
+    return searchWithin(this.basis, data);
 
     function searchWithin(node, data) {
       if (!node) {
@@ -68,7 +68,7 @@ class BinarySearchTree {
   }
 
   find(data) {
-    return searchWithin(this.root, data);
+    return searchWithin(this.basis, data);
 
     function searchWithin(node, data) {
       if (!node) {
@@ -86,7 +86,7 @@ class BinarySearchTree {
   }
 
   remove(data) {
-    this.root = removeNode(this.root, data);
+    this.basis = removeNode(this.basis, data);
 
     function removeNode(node, data) {
       if (!node) {
@@ -133,11 +133,11 @@ class BinarySearchTree {
   }
 
   min() {
-    if (!this.root) {
+    if (!this.basis) {
       return;
     }
 
-    let node = this.root;
+    let node = this.basis;
     while (node.left) {
       node = node.left;
     }
@@ -146,11 +146,11 @@ class BinarySearchTree {
   }
 
   max() {
-    if (!this.root) {
+    if (!this.basis) {
       return;
     }
 
-    let node = this.root;
+    let node = this.basis;
     while (node.right) {
       node = node.right;
     }
@@ -160,33 +160,33 @@ class BinarySearchTree {
 
 }
 
-// const tree = new BinarySearchTree();
+const tree = new BinarySearchTree();
 
-// tree.add(3);
+tree.add(3);
 
-// tree.add(2);
+tree.add(2);
 
-// tree.add(1);
+tree.add(1);
 
-// tree.add(4);
+tree.add(4);
 
-// tree.add(5);
+tree.add(5);
 
-// console.log(tree)
+console.log(tree)
 
-// console.log(tree.root().data);
+console.log(tree.root().data);
 
-// console.log(tree.min()); 
+console.log(tree.min()); 
 
-// console.log(tree.max());
+console.log(tree.max());
 
-// console.log(tree.remove(5));
+console.log(tree.remove(5));
 
-// console.log(tree.has(5)); 
+console.log(tree.has(5)); 
 
-// console.log(tree.max()); 
+console.log(tree.max()); 
 
-// console.log(tree.find(4))
+console.log(tree.find(4))
 
 module.exports = {
   BinarySearchTree
