@@ -160,33 +160,33 @@ class BinarySearchTree {
 
 }
 
-const tree = new BinarySearchTree();
+// const tree = new BinarySearchTree();
 
-tree.add(3);
+// tree.add(3);
 
-tree.add(2);
+// tree.add(2);
 
-tree.add(1);
+// tree.add(1);
 
-tree.add(4);
+// tree.add(4);
 
-tree.add(5);
+// tree.add(5);
 
-console.log(tree)
+// console.log(tree)
 
-console.log(tree.root().data);
+// console.log(tree.root().data);
 
-console.log(tree.min()); 
+// console.log(tree.min()); 
 
-console.log(tree.max());
+// console.log(tree.max());
 
-console.log(tree.remove(5));
+// console.log(tree.remove(5));
 
-console.log(tree.has(5)); 
+// console.log(tree.has(5)); 
 
-console.log(tree.max()); 
+// console.log(tree.max()); 
 
-console.log(tree.find(4))
+// console.log(tree.find(4))
 
 module.exports = {
   BinarySearchTree
