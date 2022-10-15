@@ -15,12 +15,12 @@ const { NotImplementedError } = require('../extensions/index.js');
  * the output should be [1, 2, 4, 5]
  *
  * Singly - linked lists are already defined using interface*/
- class ListNode {
+class ListNode {
     constructor(x) {
       this.value = x;
       this.next = null;
     }
- }
+}
 
 function removeKFromList(l, k) {
   while (l.value === k) {
